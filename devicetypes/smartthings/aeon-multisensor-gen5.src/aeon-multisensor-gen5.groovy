@@ -267,4 +267,3 @@ private secure(physicalgraph.zwave.Command cmd) {
 private secureSequence(commands, delay=200) {
 	delayBetween(commands.collect{ secure(it) }, delay)
 }
-
